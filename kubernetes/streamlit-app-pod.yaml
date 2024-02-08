@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: streamlit-pod
+spec:
+  containers:
+  - name: streamlit-app
+    image: graalsystems/example-streamlit:latest
+    ports:
+    - containerPort: 8501
